@@ -1,0 +1,28 @@
+:root{
+    --main-bg-color: #f98408;
+    --main-color: #f98408;
+}
+.navbar-brand span,.about h2 span,.features .feat span.glyphicon,.testemonials span{
+    color: var(--main-color);
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus,.navbar-nav > li > .dropdown-menu li a:hover,.navbar-nav > li > .dropdown-menu li a:focus,.navbar-nav > li > .dropdown-menu .divider,
+.carousel-indicators .active,.option-box .gear-check{
+    background-color: var(--main-bg-color);
+}
+
+.navbar-nav > li > .dropdown-menu{
+ 
+    border-top: 2px solid  var(--main-color);
+}
+.option-box .color-option{
+    border: 3px solid var(--main-color);
+}
+
+ 
+ 
+
+
+
+
+

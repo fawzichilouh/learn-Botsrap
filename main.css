@@ -1,0 +1,512 @@
+:root{
+    --main-bg-color: brown;
+    --main-color: brown;
+  }
+
+body{   /*Hit 3ndk navbar fixed top */ 
+   padding-top: 60px;
+   overflow: hidden;  /*bach maybanch scroll f loading */ /*khasso ythayad apres loading*/
+}
+.h1{
+
+}
+
+/*Learn.html*/
+.product{
+    background-color: brown;
+    color: aliceblue;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.screen{
+    background-color:green;
+    color: aliceblue;
+    padding: 10px;
+   
+
+}
+/*End learn */
+
+
+
+
+/*start Overriding Bootsrap */
+
+.navbar{
+    min-height: 60px;
+}
+@media (max-width: 767px) {
+    .navbar > .container .navbar-brand{
+       
+        line-height: 30px !important;
+    
+    }
+}
+/*brand */
+.navbar-brand{
+    font-size: 24px;
+    line-height: 35px;}
+
+.navbar-nav > li >a{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;}
+
+/*Active link */
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+    color: #fff;}
+/*Dropdown  */
+.navbar-nav > li > .dropdown-menu{background-color: rgb(42, 42, 42);min-width: 200px;}
+.navbar-nav > li > .dropdown-menu a{
+    color: #fff;
+    padding: 7px 20px;
+    -webkit-transition: padding .5s ease-in-out;
+    -moz-transition: padding .5s ease-in-out;
+    transition:padding .5s ease-in-out ;
+
+}
+.navbar-nav > li > .dropdown-menu li a:hover,
+.navbar-nav > li > .dropdown-menu li a:focus{
+    position: relative;
+    padding-left: 25px;
+}
+
+
+
+/*navbar-toggle  */
+.navbar-toggle{margin-top: 12px;}
+
+/* carousel-caption */
+.carousel-caption{
+    bottom:40%;
+    background-color: rgba(0, 0, 0, 0.171);
+    padding-top: 0;
+}
+
+
+/* carousel-indicators */
+.carousel-indicators li{
+    width: 15px;
+    height: 15px;
+} 
+.carousel-indicators .active{
+width: 18px;
+height: 18px;
+}
+
+/*Section box */
+.option-box{
+    position: fixed;
+    top: 85px;
+    left: 0;
+    z-index: 9999;
+}
+.option-box .color-option{
+   
+    background-color: black;
+    float: left;
+    color: #fff;
+    width: 180px;
+    padding: 10px 0 15px 10px ; 
+}
+.option-box .color-option h4{margin-top: 5px;}
+.option-box .color-option ul li{
+float: left;
+width: 20px;
+height: 20px;
+margin-right: 3px;
+cursor: pointer;
+}
+.option-box .gear-check{
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.option-box .gear-check:hover{
+    opacity: 1;
+}
+/* About  */
+.about{
+    min-height: 250px;
+    padding: 60px 0;}
+.about .lead{
+    color: #888;;
+    font-size: 23px;
+    margin-top: 15px;
+}
+.about h2{font-weight: bold;}
+
+
+/* Features */
+.features{
+    background-color: #eee;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.features .feat{margin-bottom: 15px;}
+.features .feat h3{margin-bottom: 25px;}
+.features .feat p{line-height: 2em;}
+.features .feat span.glyphicon{font-size: 22px;margin-bottom: 15px;}
+
+/* testemonials  */
+.testemonials{
+background-color: cadetblue;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.testemonials h2{
+font-weight: bold;
+margin-bottom: 20px;
+}  
+.testemonials .lead{
+    line-height: 2;
+  margin-bottom: 10px !important;
+}
+.testemonials span{font-size: 18px; font-weight: bold;}
+.testemonials .carousel-inner{min-height: 140px;}
+.testemonials .carousel-inner img{width: 100%;}  /*bach wakha kant chacha kbiira img dyal carousel takbar */
+
+.testemonials .carousel-indicators{
+    position: static;  /*bach thayad dik absolute li 3ndo */
+    width: 100%;  /*bach yji f lwassst wthayad dik with 60 % */
+    margin-left: auto;
+    padding-top: 15px;
+}
+.testemonials .carousel-indicators li{
+    text-indent: 0;
+    width: 70px;
+    height: 70px;
+    border: none;
+    opacity: 0.5;
+    
+
+}
+.testemonials .carousel-indicators li.active{opacity: 1; background: none;}
+
+.testemonials .carousel-indicators li img{ 
+width: 100%;
+max-height: 100%;
+border-radius: 50%;
+transition: all 1s ease;
+}
+
+
+/* price-table */
+.price-table{ padding: 50px 0;}
+.price-table .row{margin-top:30px ;margin-bottom: 30px;}
+
+.price-table .price-box{
+background-color: rgb(203, 203, 199);
+padding: 10px;
+border: 1px solid #eee;
+margin-bottom: 15px;border-radius: 10px;} 
+.price-table .price-box h3{margin: 5px 0 15px;}  
+.price-table .price-box:hover p{
+    transform: scale(1.2) rotate(360deg);
+    border: 20x solid #888;
+}
+.price-table .price-box p{
+background-color: rgb(153, 191, 161);
+ font-size:25px ;
+ font-weight: bold;
+ color: rgb(18, 19, 20);
+ width: 90px;
+ height: 90px;
+ border-radius: 50%;
+ border: 20x solid #fff;
+ line-height: 90px;
+ transition-duration:  0.7s;
+} 
+.price-table .price-box ul{
+    font-size: 18px;
+    line-height: 2.5; 
+}
+.price-table .price-box a{margin-bottom: 15px;}
+
+/* our-team  */
+.our-team {
+    padding: 40px 0;
+    background: url('../images/sl3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    min-height: 600px;
+    color: #fff;
+    position: relative;
+}
+.our-team .overlay{
+background-color: rgba(0, 0, 0, 0.774);
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0.85;
+}
+.our-team  h2{ margin-bottom: 50px;}
+.our-team .container{
+ padding-top:50px ;
+ position: relative;
+ overflow: hidden;
+ min-height:100% ;
+}
+.our-team .person{margin-bottom: 25px;}
+.our-team .person img{
+    width: 150px;
+    height: 150px;
+}
+
+/* subs */
+.subs{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.subs h2{
+ letter-spacing: 1px;
+margin-bottom: 20px;
+}
+.subs p{
+margin-bottom: 30px;
+font-size: 16px;
+}
+.subs input{width: 350px !important;}
+
+@media (max-width:768px) {   /*Ila drti lmax :767px ila kant width dyal screen : 767 maghaytba9ach 3liha */
+    .subs input{width: 400px;}
+    .subs input,.subs button{ margin: 10px auto !important;}
+    .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse{ max-height: none;  /*bach thayad scroll  mn  navbar */}
+}
+
+
+/* Statistiuqes */
+.stats{
+    background-color: cadetblue;
+    padding: 40px 0;
+}
+.stats h2{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.stats p{font-size: 25px;}
+.stats p:nth-child(2){
+font-size: 30px;
+font-weight: 700;}
+
+
+/* skills  */
+.skills{padding: 40px 0;}
+.skills h2{
+margin-bottom: 45px;
+font-weight: bold;
+}
+.skills .skills-info{
+    
+}
+.skills .skills-info h3{
+    margin-top: 0;
+    font-weight: 600;
+    }
+.skills .progress{height: 30px;}
+.skills .progress-bar{
+    line-height: 30px;  /*khasso ikon kaysawi l height dyal container dyalo */
+    font-size: 15px;
+   text-align: left;
+   text-indent: 10px;  /*ykhali 10 px 9bal ma ybda lkatba */
+}
+
+/* contact-us */
+.contact-us{
+    background-color: rgb(59, 59, 59);
+    padding-top: 40px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+.contact-us i{cursor: pointer;}
+.contact-us h2{margin-bottom: 40px;}
+.contact-us input{margin-bottom: 15px;}
+.contact-us form textarea{
+    padding: 5px 10;
+    margin-bottom: 8px;
+    height: 114px;
+}
+.contact-us input,.contact-us form textarea{
+background: rgb(87, 82, 82);
+color: #fff;
+border: none;
+}
+
+/*  clients */
+.clients{padding: 40px 0;}
+.clients img{
+opacity: 0.4;
+filter: alpha(opacity=40);
+margin-top: 20px;
+height: 90px;
+cursor: pointer;
+transition: all 0.5s ease-in-out;
+
+}
+.clients img:hover{opacity: 1;}
+
+/*fotter */
+.fotter{
+    background-color: #333;
+    color: #aaaaaa;
+    padding-top: 10px;
+}
+.fotter a{color: #AAA;}
+.fotter a:hover{color: #fff;}
+.fotter h3{
+    color: rgb(4, 125, 195);
+    letter-spacing: 1px;
+    margin: 30px 0 20px;
+}
+.fotter .list-services{ overflow: hidden;}
+.fotter .list-services li{
+width: 33.33%;
+float: left;
+padding: 10px 0;
+}
+.fotter .list-social{
+overflow: hidden;
+margin: 20px 0;
+margin-left: 20px;
+}
+
+.fotter .list-social li{
+float: left;
+margin-right: 10px;
+opacity: 0.8;
+cursor: pointer;
+}
+.fotter .list-social li:hover{ opacity: 1;}
+.fotter .list-social li img{
+width: 50px;
+height: 50px;
+}
+.fotter .last-articles .media-body{padding-left: 10px;}
+.fotter .F-our-works .img-thumbnail{
+    background: rgba(39, 39, 39, 0.26);
+    border: 1px solid #444;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.fotter .copyright{
+    background-color: rgba(0, 0, 0, 0.541);
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+/*Start loading-overflay */
+.loading-overflay{
+    background-color: rgb(70, 109, 146);
+    color: brown;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+/*Start Spinners (inside loading code source from https://tobiasahlin.com/spinkit/ */
+.spinner {
+  margin: 300px auto;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  text-align: center;
+  
+  -webkit-animation: sk-rotate 2.0s infinite linear;
+  animation: sk-rotate 2.0s infinite linear;
+}
+
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: rgb(224, 85, 85);
+  border-radius: 100%;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+/*End Spinner
+/*End loading-overflay */
+
+/*Start scroll  up*/
+#scroll-top{
+width: 40px;
+height: 40px;
+text-align: center;
+color: #ddd;
+background-color: #272727;
+position: fixed;
+border-radius: 50%;
+right: 15px;
+bottom: 15px;
+z-index: 999;
+cursor: pointer;
+display: none;
+}
+#scroll-top .fa-chevron-up{line-height: 40px;}
+#scroll-top:hover{background-color: #444;}
+/*End scroll  up*/
+
+
+
+
+/*Start Media Query */
+
+@media (max-width:767px)  /*xs small screen */
+{
+    .navbar-nav > li >a{
+        padding-top:10px ;
+        padding-bottom:10px ;
+
+    }
+
+    .F-our-works{
+        text-align: center;
+    }
+
+}
+/*End Media Query */
+
+
+
+
+
+
+
+
+
+
